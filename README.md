@@ -1,4 +1,4 @@
-# Лабораторна робота №6 — варіант 134
+# Лабораторна робота №6 - варіант 134
 
 Тема: JavaScript, JSON, API, fetch, Promise. Джерело: https://randomuser.me/api/
 
