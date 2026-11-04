@@ -1,0 +1,208 @@
+
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1d2b45;
+    background: #f1f5fb;
+    font-synthesis: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 64px 22px 36px;
+}
+
+/* Заголовок сторінки */
+.header {
+    margin-bottom: 32px;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
+    font-size: 12px;
+    font-weight: 700;
+    color: #3966a6;
+}
+
+h1 {
+    font-size: clamp(30px, 5vw, 46px);
+    letter-spacing: -0.035em;
+    line-height: 1.1;
+    margin: 18px 0;
+}
+
+.header p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #52627d;
+    max-width: 730px;
+}
+
+
+.variant {
+    display: inline-block;
+    border-radius: 22px;
+    background: #e0ebfa;
+    color: #294a79;
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Основна панель */
+.panel {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 15px 45px #263d6414;
+    border: 1px solid #e4eaf3;
+}
+
+.panel-head {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+h2 {
+    font-size: 21px;
+    margin: 0;
+}
+
+/* Кнопка */
+button {
+    background: #245bd4;
+    color: #fff;
+    border: 0;
+    border-radius: 11px;
+    padding: 13px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+button:hover {
+    background: #1948ae;
+}
+
+button:focus-visible {
+    outline: 3px solid #b5d0ff;
+    outline-offset: 3px;
+}
+
+button:disabled {
+    background: #7e9fd8;
+    cursor: wait;
+}
+
+/* Повідомлення про стан завантаження */
+.status {
+    min-height: 24px;
+    color: #61708b;
+    line-height: 1.5;
+    margin: 18px 0 0;
+}
+
+.status.error {
+    color: #b42318;
+}
+
+/* Профіль користувача */
+.profile {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 28px;
+    align-items: start;
+    border-top: 1px solid #e6eaf1;
+    padding-top: 25px;
+    margin-top: 22px;
+}
+
+.profile[hidden] {
+    display: none;
+}
+
+/* Фотографія користувача */
+.avatar-wrap img {
+    object-fit: cover;
+    width: 160px;
+    height: 160px;
+    border-radius: 20px;
+    border: 5px solid #edf3fd;
+}
+
+/* Інформація про користувача */
+.details {
+    margin: 0;
+}
+
+.details div {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ecf0f6;
+}
+
+.details dt {
+    font-size: 13px;
+    font-weight: 700;
+    color: #6b7b97;
+}
+
+.details dd {
+    margin: 0;
+    font-size: 16px;
+    overflow-wrap: anywhere;
+}
+
+/* Нижня частина сторінки */
+footer {
+    margin-top: 26px;
+    color: #6c7c93;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+a {
+    color: #245bd4;
+}
+
+/*  для мобільних пристроїв */
+@media (max-width: 630px) {
+    .container {
+        padding: 35px 14px;
+    }
+
+    .panel {
+        padding: 21px;
+    }
+
+    .profile {
+        grid-template-columns: 1fr;
+    }
+
+    .details div {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .avatar-wrap img {
+        width: 140px;
+        height: 140px;
+    }
+}

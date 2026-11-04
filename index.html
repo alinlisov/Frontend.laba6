@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Лабораторна робота №6: робота з Random User API, JSON, fetch та Promise. Варіант 134.">
+  <title> Лісова Аліна ІС-42 лабораторна №6 варіант 134</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <span class="eyebrow">ІС-42, Лісова А. М. · Лабораторна №6</span>
+      <h1>Генератор випадкового користувача</h1>
+      <p>Отримання даних із зовнішнього API у форматі JSON за допомогою JavaScript, Fetch API та Promise.</p>
+      <span class="variant">Варіант 134 </span>
+    </header>
+    <section class="panel" aria-labelledby="profile-title">
+      <div class="panel-head">
+        <h2 id="profile-title">Інформація про користувача</h2>
+        <button type="button" id="load-user">Отримати користувача</button>
+      </div>
+      <p id="status" class="status" role="status" aria-live="polite">Натисніть кнопку, щоб завантажити дані.</p>
+      <div id="profile" class="profile" hidden>
+        <div class="avatar-wrap"><img id="picture" alt="Фотографія користувача" width="160" height="160"></div>
+        <dl class="details">
+          <div><dt>Ім'я</dt><dd id="name"></dd></div>
+          <div><dt>Місто</dt><dd id="city"></dd></div>
+          <div><dt>Поштовий індекс</dt><dd id="postcode"></dd></div>
+          <div><dt>Електронна пошта</dt><dd id="email"></dd></div>
+        </dl>
+      </div>
+    </section>
+    <footer>Джерело даних: <a href="https://randomuser.me/" target="_blank" rel="noopener noreferrer">Random User API</a>. Кожне натискання надсилає новий HTTP-запит.</footer>
+  </main>
+</body>
+</html>
